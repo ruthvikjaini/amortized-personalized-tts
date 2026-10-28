@@ -1,0 +1,1233 @@
+{
+  "seed": 0,
+  "n_problems": 120,
+  "n_discovery_problems": 60,
+  "n_heldout_problems": 60,
+  "budget_candidates": 30,
+  "runtime_seconds": 138.56211396300023,
+  "guide": {
+    "early_stop_rate_tight_latency": 0.5714285714285714,
+    "early_stop_rate_other": 0.625,
+    "tier_share_high_accuracy": {
+      "small": 0.6666666666666666,
+      "medium": 0.3333333333333333,
+      "large": 0.0
+    },
+    "tier_share_other": {
+      "small": 0.9333333333333333,
+      "medium": 0.06666666666666667,
+      "large": 0.0
+    },
+    "median_width_tight_cost": 8.0,
+    "median_width_other": 8.0,
+    "rules": [
+      "Latency-tight profiles (<=350ms) used early stopping in 57% of winning controllers, vs 62% otherwise.",
+      "High-accuracy profiles (>=0.80) favoured tier small; other profiles favoured tier small.",
+      "Median winning width was 8 under a tight cost ceiling vs 8 otherwise."
+    ]
+  },
+  "summary": {
+    "from_scratch": {
+      "mean_jsr": 0.828125,
+      "mean_candidates": 30.0,
+      "mean_candidates_to_best": 14.875
+    },
+    "warm_start": {
+      "mean_jsr": 0.828125,
+      "mean_candidates": 30.0,
+      "mean_candidates_to_best": 3.5
+    },
+    "guide_only": {
+      "mean_jsr": 0.765625,
+      "mean_candidates": 30.0,
+      "mean_candidates_to_best": 8.375
+    },
+    "full": {
+      "mean_jsr": 0.828125,
+      "mean_candidates": 30.0,
+      "mean_candidates_to_best": 4.0
+    },
+    "fixed_default": {
+      "mean_jsr": 0.09375,
+      "mean_candidates": null
+    },
+    "oracle": {
+      "mean_jsr": 0.828125,
+      "mean_candidates": null
+    }
+  },
+  "single_frontier_mean_jsr": {
+    "accuracy_cost": 0.0,
+    "accuracy_latency": 0.765625
+  },
+  "targets": [
+    {
+      "profile": "target-0",
+      "variants": {
+        "from_scratch": {
+          "variant": "from_scratch",
+          "profile": "target-0",
+          "best_controller": "small/w8/p1+stop",
+          "joint_satisfaction_rate": 0.75,
+          "accuracy": 0.8041666666666667,
+          "latency_ms": 327.20500000000004,
+          "cost": 0.00011462000000000001,
+          "n_candidates": 30,
+          "candidates_to_best": 17,
+          "discovery_seconds": 1.1206739810004365,
+          "heldout_joint_satisfaction_rate": 1.0,
+          "heldout_accuracy": 0.83125,
+          "heldout_latency_ms": 311.13239583333336,
+          "heldout_cost": 0.00010877541666666667
+        },
+        "warm_start": {
+          "variant": "warm_start",
+          "profile": "target-0",
+          "best_controller": "small/w8/p1+stop",
+          "joint_satisfaction_rate": 0.75,
+          "accuracy": 0.8041666666666667,
+          "latency_ms": 327.20500000000004,
+          "cost": 0.00011462000000000001,
+          "n_candidates": 30,
+          "candidates_to_best": 1,
+          "discovery_seconds": 0.9631996909993177,
+          "heldout_joint_satisfaction_rate": 1.0,
+          "heldout_accuracy": 0.83125,
+          "heldout_latency_ms": 311.13239583333336,
+          "heldout_cost": 0.00010877541666666667
+        },
+        "guide_only": {
+          "variant": "guide_only",
+          "profile": "target-0",
+          "best_controller": "small/w8/p1+stop",
+          "joint_satisfaction_rate": 0.75,
+          "accuracy": 0.8041666666666667,
+          "latency_ms": 327.20500000000004,
+          "cost": 0.00011462000000000001,
+          "n_candidates": 30,
+          "candidates_to_best": 1,
+          "discovery_seconds": 1.0305879469997308,
+          "heldout_joint_satisfaction_rate": 1.0,
+          "heldout_accuracy": 0.83125,
+          "heldout_latency_ms": 311.13239583333336,
+          "heldout_cost": 0.00010877541666666667
+        },
+        "full": {
+          "variant": "full",
+          "profile": "target-0",
+          "best_controller": "small/w8/p1+stop",
+          "joint_satisfaction_rate": 0.75,
+          "accuracy": 0.8041666666666667,
+          "latency_ms": 327.20500000000004,
+          "cost": 0.00011462000000000001,
+          "n_candidates": 30,
+          "candidates_to_best": 1,
+          "discovery_seconds": 0.9670340060001763,
+          "heldout_joint_satisfaction_rate": 1.0,
+          "heldout_accuracy": 0.83125,
+          "heldout_latency_ms": 311.13239583333336,
+          "heldout_cost": 0.00010877541666666667
+        }
+      },
+      "fixed_default": {
+        "controller": "medium/w4/p1",
+        "seed_metrics": [
+          {
+            "accuracy": 0.75,
+            "latency_ms": 444.97583333333324,
+            "cost": 0.00040750666666666667
+          },
+          {
+            "accuracy": 0.7333333333333333,
+            "latency_ms": 448.27666666666664,
+            "cost": 0.00041061333333333326
+          },
+          {
+            "accuracy": 0.8333333333333334,
+            "latency_ms": 464.08666666666664,
+            "cost": 0.00042549333333333336
+          },
+          {
+            "accuracy": 0.8166666666666667,
+            "latency_ms": 452.8808333333333,
+            "cost": 0.00041494666666666677
+          },
+          {
+            "accuracy": 0.7333333333333333,
+            "latency_ms": 444.8766666666666,
+            "cost": 0.0004074133333333334
+          },
+          {
+            "accuracy": 0.8,
+            "latency_ms": 460.21916666666675,
+            "cost": 0.00042185333333333346
+          },
+          {
+            "accuracy": 0.75,
+            "latency_ms": 437.4675,
+            "cost": 0.00040044
+          },
+          {
+            "accuracy": 0.8,
+            "latency_ms": 445.67,
+            "cost": 0.0004081600000000001
+          }
+        ],
+        "accuracy": 0.7770833333333333,
+        "latency_ms": 449.8066666666666,
+        "cost": 0.0004120533333333334,
+        "joint_satisfaction_rate": 0.0
+      },
+      "oracle": {
+        "variant": "oracle",
+        "profile": "target-0",
+        "best_controller": "small/w8/p1+stop",
+        "joint_satisfaction_rate": 1.0,
+        "accuracy": 0.83125,
+        "latency_ms": 311.13239583333336,
+        "cost": 0.00010877541666666667,
+        "n_candidates": 72,
+        "candidates_to_best": 72,
+        "discovery_seconds": 5.05145838899989
+      },
+      "single_frontier": {
+        "accuracy_cost": {
+          "controller": "medium/w8/p1+stop",
+          "joint_satisfaction_rate": 0.0,
+          "accuracy": 0.86875,
+          "latency_ms": 571.5479166666667,
+          "cost": 0.0005266333333333334
+        },
+        "accuracy_latency": {
+          "controller": "small/w8/p1+stop",
+          "joint_satisfaction_rate": 1.0,
+          "accuracy": 0.83125,
+          "latency_ms": 311.13239583333336,
+          "cost": 0.00010877541666666667
+        }
+      }
+    },
+    {
+      "profile": "target-1",
+      "variants": {
+        "from_scratch": {
+          "variant": "from_scratch",
+          "profile": "target-1",
+          "best_controller": "small/w8/p1+stop",
+          "joint_satisfaction_rate": 0.75,
+          "accuracy": 0.8041666666666667,
+          "latency_ms": 327.20500000000004,
+          "cost": 0.00011462000000000001,
+          "n_candidates": 30,
+          "candidates_to_best": 27,
+          "discovery_seconds": 0.8926620000002004,
+          "heldout_joint_satisfaction_rate": 0.875,
+          "heldout_accuracy": 0.83125,
+          "heldout_latency_ms": 311.13239583333336,
+          "heldout_cost": 0.00010877541666666667
+        },
+        "warm_start": {
+          "variant": "warm_start",
+          "profile": "target-1",
+          "best_controller": "small/w8/p1+stop",
+          "joint_satisfaction_rate": 0.75,
+          "accuracy": 0.8041666666666667,
+          "latency_ms": 327.20500000000004,
+          "cost": 0.00011462000000000001,
+          "n_candidates": 30,
+          "candidates_to_best": 1,
+          "discovery_seconds": 1.008872237000105,
+          "heldout_joint_satisfaction_rate": 0.875,
+          "heldout_accuracy": 0.83125,
+          "heldout_latency_ms": 311.13239583333336,
+          "heldout_cost": 0.00010877541666666667
+        },
+        "guide_only": {
+          "variant": "guide_only",
+          "profile": "target-1",
+          "best_controller": "small/w8/p1+stop",
+          "joint_satisfaction_rate": 0.75,
+          "accuracy": 0.8041666666666667,
+          "latency_ms": 327.20500000000004,
+          "cost": 0.00011462000000000001,
+          "n_candidates": 30,
+          "candidates_to_best": 18,
+          "discovery_seconds": 0.907774311999674,
+          "heldout_joint_satisfaction_rate": 0.875,
+          "heldout_accuracy": 0.83125,
+          "heldout_latency_ms": 311.13239583333336,
+          "heldout_cost": 0.00010877541666666667
+        },
+        "full": {
+          "variant": "full",
+          "profile": "target-1",
+          "best_controller": "small/w8/p1+stop",
+          "joint_satisfaction_rate": 0.75,
+          "accuracy": 0.8041666666666667,
+          "latency_ms": 327.20500000000004,
+          "cost": 0.00011462000000000001,
+          "n_candidates": 30,
+          "candidates_to_best": 1,
+          "discovery_seconds": 0.9647308659987175,
+          "heldout_joint_satisfaction_rate": 0.875,
+          "heldout_accuracy": 0.83125,
+          "heldout_latency_ms": 311.13239583333336,
+          "heldout_cost": 0.00010877541666666667
+        }
+      },
+      "fixed_default": {
+        "controller": "medium/w4/p1",
+        "seed_metrics": [
+          {
+            "accuracy": 0.75,
+            "latency_ms": 444.97583333333324,
+            "cost": 0.00040750666666666667
+          },
+          {
+            "accuracy": 0.7333333333333333,
+            "latency_ms": 448.27666666666664,
+            "cost": 0.00041061333333333326
+          },
+          {
+            "accuracy": 0.8333333333333334,
+            "latency_ms": 464.08666666666664,
+            "cost": 0.00042549333333333336
+          },
+          {
+            "accuracy": 0.8166666666666667,
+            "latency_ms": 452.8808333333333,
+            "cost": 0.00041494666666666677
+          },
+          {
+            "accuracy": 0.7333333333333333,
+            "latency_ms": 444.8766666666666,
+            "cost": 0.0004074133333333334
+          },
+          {
+            "accuracy": 0.8,
+            "latency_ms": 460.21916666666675,
+            "cost": 0.00042185333333333346
+          },
+          {
+            "accuracy": 0.75,
+            "latency_ms": 437.4675,
+            "cost": 0.00040044
+          },
+          {
+            "accuracy": 0.8,
+            "latency_ms": 445.67,
+            "cost": 0.0004081600000000001
+          }
+        ],
+        "accuracy": 0.7770833333333333,
+        "latency_ms": 449.8066666666666,
+        "cost": 0.0004120533333333334,
+        "joint_satisfaction_rate": 0.0
+      },
+      "oracle": {
+        "variant": "oracle",
+        "profile": "target-1",
+        "best_controller": "small/w8/p1+stop",
+        "joint_satisfaction_rate": 0.875,
+        "accuracy": 0.83125,
+        "latency_ms": 311.13239583333336,
+        "cost": 0.00010877541666666667,
+        "n_candidates": 72,
+        "candidates_to_best": 72,
+        "discovery_seconds": 4.9325625430010405
+      },
+      "single_frontier": {
+        "accuracy_cost": {
+          "controller": "medium/w8/p2+stop",
+          "joint_satisfaction_rate": 0.0,
+          "accuracy": 0.8666666666666667,
+          "latency_ms": 1141.3214583333333,
+          "cost": 0.0010515966666666669
+        },
+        "accuracy_latency": {
+          "controller": "small/w8/p1+stop",
+          "joint_satisfaction_rate": 0.875,
+          "accuracy": 0.83125,
+          "latency_ms": 311.13239583333336,
+          "cost": 0.00010877541666666667
+        }
+      }
+    },
+    {
+      "profile": "target-2",
+      "variants": {
+        "from_scratch": {
+          "variant": "from_scratch",
+          "profile": "target-2",
+          "best_controller": "small/w4/p1",
+          "joint_satisfaction_rate": 0.75,
+          "accuracy": 0.7166666666666668,
+          "latency_ms": 224.90729166666668,
+          "cost": 7.742083333333334e-05,
+          "n_candidates": 30,
+          "candidates_to_best": 2,
+          "discovery_seconds": 0.9440345850016456,
+          "heldout_joint_satisfaction_rate": 0.875,
+          "heldout_accuracy": 0.7291666666666666,
+          "heldout_latency_ms": 227.82802083333334,
+          "heldout_cost": 7.848291666666667e-05
+        },
+        "warm_start": {
+          "variant": "warm_start",
+          "profile": "target-2",
+          "best_controller": "small/w4/p1",
+          "joint_satisfaction_rate": 0.75,
+          "accuracy": 0.7166666666666668,
+          "latency_ms": 224.90729166666668,
+          "cost": 7.742083333333334e-05,
+          "n_candidates": 30,
+          "candidates_to_best": 1,
+          "discovery_seconds": 1.0023409959994751,
+          "heldout_joint_satisfaction_rate": 0.875,
+          "heldout_accuracy": 0.7291666666666666,
+          "heldout_latency_ms": 227.82802083333334,
+          "heldout_cost": 7.848291666666667e-05
+        },
+        "guide_only": {
+          "variant": "guide_only",
+          "profile": "target-2",
+          "best_controller": "small/w4/p1",
+          "joint_satisfaction_rate": 0.75,
+          "accuracy": 0.7166666666666668,
+          "latency_ms": 224.90729166666668,
+          "cost": 7.742083333333334e-05,
+          "n_candidates": 30,
+          "candidates_to_best": 6,
+          "discovery_seconds": 1.0004646649995266,
+          "heldout_joint_satisfaction_rate": 0.875,
+          "heldout_accuracy": 0.7291666666666666,
+          "heldout_latency_ms": 227.82802083333334,
+          "heldout_cost": 7.848291666666667e-05
+        },
+        "full": {
+          "variant": "full",
+          "profile": "target-2",
+          "best_controller": "small/w4/p1",
+          "joint_satisfaction_rate": 0.75,
+          "accuracy": 0.7166666666666668,
+          "latency_ms": 224.90729166666668,
+          "cost": 7.742083333333334e-05,
+          "n_candidates": 30,
+          "candidates_to_best": 1,
+          "discovery_seconds": 1.0709681600001204,
+          "heldout_joint_satisfaction_rate": 0.875,
+          "heldout_accuracy": 0.7291666666666666,
+          "heldout_latency_ms": 227.82802083333334,
+          "heldout_cost": 7.848291666666667e-05
+        }
+      },
+      "fixed_default": {
+        "controller": "medium/w4/p1",
+        "seed_metrics": [
+          {
+            "accuracy": 0.75,
+            "latency_ms": 444.97583333333324,
+            "cost": 0.00040750666666666667
+          },
+          {
+            "accuracy": 0.7333333333333333,
+            "latency_ms": 448.27666666666664,
+            "cost": 0.00041061333333333326
+          },
+          {
+            "accuracy": 0.8333333333333334,
+            "latency_ms": 464.08666666666664,
+            "cost": 0.00042549333333333336
+          },
+          {
+            "accuracy": 0.8166666666666667,
+            "latency_ms": 452.8808333333333,
+            "cost": 0.00041494666666666677
+          },
+          {
+            "accuracy": 0.7333333333333333,
+            "latency_ms": 444.8766666666666,
+            "cost": 0.0004074133333333334
+          },
+          {
+            "accuracy": 0.8,
+            "latency_ms": 460.21916666666675,
+            "cost": 0.00042185333333333346
+          },
+          {
+            "accuracy": 0.75,
+            "latency_ms": 437.4675,
+            "cost": 0.00040044
+          },
+          {
+            "accuracy": 0.8,
+            "latency_ms": 445.67,
+            "cost": 0.0004081600000000001
+          }
+        ],
+        "accuracy": 0.7770833333333333,
+        "latency_ms": 449.8066666666666,
+        "cost": 0.0004120533333333334,
+        "joint_satisfaction_rate": 0.0
+      },
+      "oracle": {
+        "variant": "oracle",
+        "profile": "target-2",
+        "best_controller": "small/w4/p1+stop",
+        "joint_satisfaction_rate": 0.875,
+        "accuracy": 0.7291666666666666,
+        "latency_ms": 185.18010416666667,
+        "cost": 6.297458333333334e-05,
+        "n_candidates": 72,
+        "candidates_to_best": 72,
+        "discovery_seconds": 4.896002821998991
+      },
+      "single_frontier": {
+        "accuracy_cost": {
+          "controller": "small/w8/p3+stop",
+          "joint_satisfaction_rate": 0.0,
+          "accuracy": 0.8416666666666668,
+          "latency_ms": 936.3832291666668,
+          "cost": 0.00032741208333333336
+        },
+        "accuracy_latency": {
+          "controller": "small/w4/p1",
+          "joint_satisfaction_rate": 0.875,
+          "accuracy": 0.7291666666666666,
+          "latency_ms": 227.82802083333334,
+          "cost": 7.848291666666667e-05
+        }
+      }
+    },
+    {
+      "profile": "target-3",
+      "variants": {
+        "from_scratch": {
+          "variant": "from_scratch",
+          "profile": "target-3",
+          "best_controller": "medium/w8/p1+stop",
+          "joint_satisfaction_rate": 0.75,
+          "accuracy": 0.875,
+          "latency_ms": 610.0847916666667,
+          "cost": 0.0005629033333333334,
+          "n_candidates": 30,
+          "candidates_to_best": 14,
+          "discovery_seconds": 0.9828184420002799,
+          "heldout_joint_satisfaction_rate": 0.625,
+          "heldout_accuracy": 0.86875,
+          "heldout_latency_ms": 571.5479166666667,
+          "heldout_cost": 0.0005266333333333334
+        },
+        "warm_start": {
+          "variant": "warm_start",
+          "profile": "target-3",
+          "best_controller": "medium/w8/p1+stop",
+          "joint_satisfaction_rate": 0.75,
+          "accuracy": 0.875,
+          "latency_ms": 610.0847916666667,
+          "cost": 0.0005629033333333334,
+          "n_candidates": 30,
+          "candidates_to_best": 6,
+          "discovery_seconds": 1.0512509430009231,
+          "heldout_joint_satisfaction_rate": 0.625,
+          "heldout_accuracy": 0.86875,
+          "heldout_latency_ms": 571.5479166666667,
+          "heldout_cost": 0.0005266333333333334
+        },
+        "guide_only": {
+          "variant": "guide_only",
+          "profile": "target-3",
+          "best_controller": "medium/w8/p1+stop",
+          "joint_satisfaction_rate": 0.75,
+          "accuracy": 0.875,
+          "latency_ms": 610.0847916666667,
+          "cost": 0.0005629033333333334,
+          "n_candidates": 30,
+          "candidates_to_best": 10,
+          "discovery_seconds": 1.1000275349997537,
+          "heldout_joint_satisfaction_rate": 0.625,
+          "heldout_accuracy": 0.86875,
+          "heldout_latency_ms": 571.5479166666667,
+          "heldout_cost": 0.0005266333333333334
+        },
+        "full": {
+          "variant": "full",
+          "profile": "target-3",
+          "best_controller": "medium/w8/p1+stop",
+          "joint_satisfaction_rate": 0.75,
+          "accuracy": 0.875,
+          "latency_ms": 610.0847916666667,
+          "cost": 0.0005629033333333334,
+          "n_candidates": 30,
+          "candidates_to_best": 8,
+          "discovery_seconds": 0.9274836450003932,
+          "heldout_joint_satisfaction_rate": 0.625,
+          "heldout_accuracy": 0.86875,
+          "heldout_latency_ms": 571.5479166666667,
+          "heldout_cost": 0.0005266333333333334
+        }
+      },
+      "fixed_default": {
+        "controller": "medium/w4/p1",
+        "seed_metrics": [
+          {
+            "accuracy": 0.75,
+            "latency_ms": 444.97583333333324,
+            "cost": 0.00040750666666666667
+          },
+          {
+            "accuracy": 0.7333333333333333,
+            "latency_ms": 448.27666666666664,
+            "cost": 0.00041061333333333326
+          },
+          {
+            "accuracy": 0.8333333333333334,
+            "latency_ms": 464.08666666666664,
+            "cost": 0.00042549333333333336
+          },
+          {
+            "accuracy": 0.8166666666666667,
+            "latency_ms": 452.8808333333333,
+            "cost": 0.00041494666666666677
+          },
+          {
+            "accuracy": 0.7333333333333333,
+            "latency_ms": 444.8766666666666,
+            "cost": 0.0004074133333333334
+          },
+          {
+            "accuracy": 0.8,
+            "latency_ms": 460.21916666666675,
+            "cost": 0.00042185333333333346
+          },
+          {
+            "accuracy": 0.75,
+            "latency_ms": 437.4675,
+            "cost": 0.00040044
+          },
+          {
+            "accuracy": 0.8,
+            "latency_ms": 445.67,
+            "cost": 0.0004081600000000001
+          }
+        ],
+        "accuracy": 0.7770833333333333,
+        "latency_ms": 449.8066666666666,
+        "cost": 0.0004120533333333334,
+        "joint_satisfaction_rate": 0.0
+      },
+      "oracle": {
+        "variant": "oracle",
+        "profile": "target-3",
+        "best_controller": "medium/w8/p1+stop",
+        "joint_satisfaction_rate": 0.625,
+        "accuracy": 0.86875,
+        "latency_ms": 571.5479166666667,
+        "cost": 0.0005266333333333334,
+        "n_candidates": 72,
+        "candidates_to_best": 72,
+        "discovery_seconds": 5.119135114000528
+      },
+      "single_frontier": {
+        "accuracy_cost": {
+          "controller": "medium/w8/p2+stop",
+          "joint_satisfaction_rate": 0.0,
+          "accuracy": 0.8666666666666667,
+          "latency_ms": 1141.3214583333333,
+          "cost": 0.0010515966666666669
+        },
+        "accuracy_latency": {
+          "controller": "medium/w8/p1+stop",
+          "joint_satisfaction_rate": 0.625,
+          "accuracy": 0.86875,
+          "latency_ms": 571.5479166666667,
+          "cost": 0.0005266333333333334
+        }
+      }
+    },
+    {
+      "profile": "target-4",
+      "variants": {
+        "from_scratch": {
+          "variant": "from_scratch",
+          "profile": "target-4",
+          "best_controller": "small/w8/p1+stop",
+          "joint_satisfaction_rate": 1.0,
+          "accuracy": 0.8041666666666667,
+          "latency_ms": 327.20500000000004,
+          "cost": 0.00011462000000000001,
+          "n_candidates": 30,
+          "candidates_to_best": 17,
+          "discovery_seconds": 0.9707116919998953,
+          "heldout_joint_satisfaction_rate": 1.0,
+          "heldout_accuracy": 0.83125,
+          "heldout_latency_ms": 311.13239583333336,
+          "heldout_cost": 0.00010877541666666667
+        },
+        "warm_start": {
+          "variant": "warm_start",
+          "profile": "target-4",
+          "best_controller": "small/w8/p1+stop",
+          "joint_satisfaction_rate": 1.0,
+          "accuracy": 0.8041666666666667,
+          "latency_ms": 327.20500000000004,
+          "cost": 0.00011462000000000001,
+          "n_candidates": 30,
+          "candidates_to_best": 1,
+          "discovery_seconds": 0.9431604969995533,
+          "heldout_joint_satisfaction_rate": 1.0,
+          "heldout_accuracy": 0.83125,
+          "heldout_latency_ms": 311.13239583333336,
+          "heldout_cost": 0.00010877541666666667
+        },
+        "guide_only": {
+          "variant": "guide_only",
+          "profile": "target-4",
+          "best_controller": "small/w8/p1+stop",
+          "joint_satisfaction_rate": 1.0,
+          "accuracy": 0.8041666666666667,
+          "latency_ms": 327.20500000000004,
+          "cost": 0.00011462000000000001,
+          "n_candidates": 30,
+          "candidates_to_best": 1,
+          "discovery_seconds": 0.9389415080004255,
+          "heldout_joint_satisfaction_rate": 1.0,
+          "heldout_accuracy": 0.83125,
+          "heldout_latency_ms": 311.13239583333336,
+          "heldout_cost": 0.00010877541666666667
+        },
+        "full": {
+          "variant": "full",
+          "profile": "target-4",
+          "best_controller": "small/w8/p1+stop",
+          "joint_satisfaction_rate": 1.0,
+          "accuracy": 0.8041666666666667,
+          "latency_ms": 327.20500000000004,
+          "cost": 0.00011462000000000001,
+          "n_candidates": 30,
+          "candidates_to_best": 1,
+          "discovery_seconds": 1.1486601870001323,
+          "heldout_joint_satisfaction_rate": 1.0,
+          "heldout_accuracy": 0.83125,
+          "heldout_latency_ms": 311.13239583333336,
+          "heldout_cost": 0.00010877541666666667
+        }
+      },
+      "fixed_default": {
+        "controller": "medium/w4/p1",
+        "seed_metrics": [
+          {
+            "accuracy": 0.75,
+            "latency_ms": 444.97583333333324,
+            "cost": 0.00040750666666666667
+          },
+          {
+            "accuracy": 0.7333333333333333,
+            "latency_ms": 448.27666666666664,
+            "cost": 0.00041061333333333326
+          },
+          {
+            "accuracy": 0.8333333333333334,
+            "latency_ms": 464.08666666666664,
+            "cost": 0.00042549333333333336
+          },
+          {
+            "accuracy": 0.8166666666666667,
+            "latency_ms": 452.8808333333333,
+            "cost": 0.00041494666666666677
+          },
+          {
+            "accuracy": 0.7333333333333333,
+            "latency_ms": 444.8766666666666,
+            "cost": 0.0004074133333333334
+          },
+          {
+            "accuracy": 0.8,
+            "latency_ms": 460.21916666666675,
+            "cost": 0.00042185333333333346
+          },
+          {
+            "accuracy": 0.75,
+            "latency_ms": 437.4675,
+            "cost": 0.00040044
+          },
+          {
+            "accuracy": 0.8,
+            "latency_ms": 445.67,
+            "cost": 0.0004081600000000001
+          }
+        ],
+        "accuracy": 0.7770833333333333,
+        "latency_ms": 449.8066666666666,
+        "cost": 0.0004120533333333334,
+        "joint_satisfaction_rate": 0.0
+      },
+      "oracle": {
+        "variant": "oracle",
+        "profile": "target-4",
+        "best_controller": "small/w8/p1+stop",
+        "joint_satisfaction_rate": 1.0,
+        "accuracy": 0.83125,
+        "latency_ms": 311.13239583333336,
+        "cost": 0.00010877541666666667,
+        "n_candidates": 72,
+        "candidates_to_best": 72,
+        "discovery_seconds": 5.029428425999868
+      },
+      "single_frontier": {
+        "accuracy_cost": {
+          "controller": "small/w8/p3+stop",
+          "joint_satisfaction_rate": 0.0,
+          "accuracy": 0.8416666666666668,
+          "latency_ms": 936.3832291666668,
+          "cost": 0.00032741208333333336
+        },
+        "accuracy_latency": {
+          "controller": "small/w8/p1+stop",
+          "joint_satisfaction_rate": 1.0,
+          "accuracy": 0.83125,
+          "latency_ms": 311.13239583333336,
+          "cost": 0.00010877541666666667
+        }
+      }
+    },
+    {
+      "profile": "target-5",
+      "variants": {
+        "from_scratch": {
+          "variant": "from_scratch",
+          "profile": "target-5",
+          "best_controller": "small/w8/p1+stop",
+          "joint_satisfaction_rate": 0.25,
+          "accuracy": 0.8041666666666667,
+          "latency_ms": 327.20500000000004,
+          "cost": 0.00011462000000000001,
+          "n_candidates": 30,
+          "candidates_to_best": 17,
+          "discovery_seconds": 0.9431398939996143,
+          "heldout_joint_satisfaction_rate": 0.75,
+          "heldout_accuracy": 0.83125,
+          "heldout_latency_ms": 311.13239583333336,
+          "heldout_cost": 0.00010877541666666667
+        },
+        "warm_start": {
+          "variant": "warm_start",
+          "profile": "target-5",
+          "best_controller": "small/w8/p1+stop",
+          "joint_satisfaction_rate": 0.25,
+          "accuracy": 0.8041666666666667,
+          "latency_ms": 327.20500000000004,
+          "cost": 0.00011462000000000001,
+          "n_candidates": 30,
+          "candidates_to_best": 1,
+          "discovery_seconds": 1.0049643289985397,
+          "heldout_joint_satisfaction_rate": 0.75,
+          "heldout_accuracy": 0.83125,
+          "heldout_latency_ms": 311.13239583333336,
+          "heldout_cost": 0.00010877541666666667
+        },
+        "guide_only": {
+          "variant": "guide_only",
+          "profile": "target-5",
+          "best_controller": "small/w8/p1+stop",
+          "joint_satisfaction_rate": 0.25,
+          "accuracy": 0.8041666666666667,
+          "latency_ms": 327.20500000000004,
+          "cost": 0.00011462000000000001,
+          "n_candidates": 30,
+          "candidates_to_best": 19,
+          "discovery_seconds": 1.0807055159984884,
+          "heldout_joint_satisfaction_rate": 0.75,
+          "heldout_accuracy": 0.83125,
+          "heldout_latency_ms": 311.13239583333336,
+          "heldout_cost": 0.00010877541666666667
+        },
+        "full": {
+          "variant": "full",
+          "profile": "target-5",
+          "best_controller": "small/w8/p1+stop",
+          "joint_satisfaction_rate": 0.25,
+          "accuracy": 0.8041666666666667,
+          "latency_ms": 327.20500000000004,
+          "cost": 0.00011462000000000001,
+          "n_candidates": 30,
+          "candidates_to_best": 1,
+          "discovery_seconds": 0.9353766379990702,
+          "heldout_joint_satisfaction_rate": 0.75,
+          "heldout_accuracy": 0.83125,
+          "heldout_latency_ms": 311.13239583333336,
+          "heldout_cost": 0.00010877541666666667
+        }
+      },
+      "fixed_default": {
+        "controller": "medium/w4/p1",
+        "seed_metrics": [
+          {
+            "accuracy": 0.75,
+            "latency_ms": 444.97583333333324,
+            "cost": 0.00040750666666666667
+          },
+          {
+            "accuracy": 0.7333333333333333,
+            "latency_ms": 448.27666666666664,
+            "cost": 0.00041061333333333326
+          },
+          {
+            "accuracy": 0.8333333333333334,
+            "latency_ms": 464.08666666666664,
+            "cost": 0.00042549333333333336
+          },
+          {
+            "accuracy": 0.8166666666666667,
+            "latency_ms": 452.8808333333333,
+            "cost": 0.00041494666666666677
+          },
+          {
+            "accuracy": 0.7333333333333333,
+            "latency_ms": 444.8766666666666,
+            "cost": 0.0004074133333333334
+          },
+          {
+            "accuracy": 0.8,
+            "latency_ms": 460.21916666666675,
+            "cost": 0.00042185333333333346
+          },
+          {
+            "accuracy": 0.75,
+            "latency_ms": 437.4675,
+            "cost": 0.00040044
+          },
+          {
+            "accuracy": 0.8,
+            "latency_ms": 445.67,
+            "cost": 0.0004081600000000001
+          }
+        ],
+        "accuracy": 0.7770833333333333,
+        "latency_ms": 449.8066666666666,
+        "cost": 0.0004120533333333334,
+        "joint_satisfaction_rate": 0.0
+      },
+      "oracle": {
+        "variant": "oracle",
+        "profile": "target-5",
+        "best_controller": "small/w8/p1+stop",
+        "joint_satisfaction_rate": 0.75,
+        "accuracy": 0.83125,
+        "latency_ms": 311.13239583333336,
+        "cost": 0.00010877541666666667,
+        "n_candidates": 72,
+        "candidates_to_best": 72,
+        "discovery_seconds": 5.236802810999507
+      },
+      "single_frontier": {
+        "accuracy_cost": {
+          "controller": "medium/w8/p1+stop",
+          "joint_satisfaction_rate": 0.0,
+          "accuracy": 0.86875,
+          "latency_ms": 571.5479166666667,
+          "cost": 0.0005266333333333334
+        },
+        "accuracy_latency": {
+          "controller": "small/w8/p1+stop",
+          "joint_satisfaction_rate": 0.75,
+          "accuracy": 0.83125,
+          "latency_ms": 311.13239583333336,
+          "cost": 0.00010877541666666667
+        }
+      }
+    },
+    {
+      "profile": "target-6",
+      "variants": {
+        "from_scratch": {
+          "variant": "from_scratch",
+          "profile": "target-6",
+          "best_controller": "medium/w8/p1+stop",
+          "joint_satisfaction_rate": 0.75,
+          "accuracy": 0.875,
+          "latency_ms": 610.0847916666667,
+          "cost": 0.0005629033333333334,
+          "n_candidates": 30,
+          "candidates_to_best": 14,
+          "discovery_seconds": 0.8993838780006627,
+          "heldout_joint_satisfaction_rate": 1.0,
+          "heldout_accuracy": 0.86875,
+          "heldout_latency_ms": 571.5479166666667,
+          "heldout_cost": 0.0005266333333333334
+        },
+        "warm_start": {
+          "variant": "warm_start",
+          "profile": "target-6",
+          "best_controller": "medium/w8/p1+stop",
+          "joint_satisfaction_rate": 0.75,
+          "accuracy": 0.875,
+          "latency_ms": 610.0847916666667,
+          "cost": 0.0005629033333333334,
+          "n_candidates": 30,
+          "candidates_to_best": 8,
+          "discovery_seconds": 0.9757770750002237,
+          "heldout_joint_satisfaction_rate": 1.0,
+          "heldout_accuracy": 0.86875,
+          "heldout_latency_ms": 571.5479166666667,
+          "heldout_cost": 0.0005266333333333334
+        },
+        "guide_only": {
+          "variant": "guide_only",
+          "profile": "target-6",
+          "best_controller": "medium/w8/p1+stop",
+          "joint_satisfaction_rate": 0.75,
+          "accuracy": 0.875,
+          "latency_ms": 610.0847916666667,
+          "cost": 0.0005629033333333334,
+          "n_candidates": 30,
+          "candidates_to_best": 7,
+          "discovery_seconds": 0.9006311320008535,
+          "heldout_joint_satisfaction_rate": 1.0,
+          "heldout_accuracy": 0.86875,
+          "heldout_latency_ms": 571.5479166666667,
+          "heldout_cost": 0.0005266333333333334
+        },
+        "full": {
+          "variant": "full",
+          "profile": "target-6",
+          "best_controller": "medium/w8/p1+stop",
+          "joint_satisfaction_rate": 0.75,
+          "accuracy": 0.875,
+          "latency_ms": 610.0847916666667,
+          "cost": 0.0005629033333333334,
+          "n_candidates": 30,
+          "candidates_to_best": 10,
+          "discovery_seconds": 0.9660120059998007,
+          "heldout_joint_satisfaction_rate": 1.0,
+          "heldout_accuracy": 0.86875,
+          "heldout_latency_ms": 571.5479166666667,
+          "heldout_cost": 0.0005266333333333334
+        }
+      },
+      "fixed_default": {
+        "controller": "medium/w4/p1",
+        "seed_metrics": [
+          {
+            "accuracy": 0.75,
+            "latency_ms": 444.97583333333324,
+            "cost": 0.00040750666666666667
+          },
+          {
+            "accuracy": 0.7333333333333333,
+            "latency_ms": 448.27666666666664,
+            "cost": 0.00041061333333333326
+          },
+          {
+            "accuracy": 0.8333333333333334,
+            "latency_ms": 464.08666666666664,
+            "cost": 0.00042549333333333336
+          },
+          {
+            "accuracy": 0.8166666666666667,
+            "latency_ms": 452.8808333333333,
+            "cost": 0.00041494666666666677
+          },
+          {
+            "accuracy": 0.7333333333333333,
+            "latency_ms": 444.8766666666666,
+            "cost": 0.0004074133333333334
+          },
+          {
+            "accuracy": 0.8,
+            "latency_ms": 460.21916666666675,
+            "cost": 0.00042185333333333346
+          },
+          {
+            "accuracy": 0.75,
+            "latency_ms": 437.4675,
+            "cost": 0.00040044
+          },
+          {
+            "accuracy": 0.8,
+            "latency_ms": 445.67,
+            "cost": 0.0004081600000000001
+          }
+        ],
+        "accuracy": 0.7770833333333333,
+        "latency_ms": 449.8066666666666,
+        "cost": 0.0004120533333333334,
+        "joint_satisfaction_rate": 0.75
+      },
+      "oracle": {
+        "variant": "oracle",
+        "profile": "target-6",
+        "best_controller": "medium/w8/p1+stop",
+        "joint_satisfaction_rate": 1.0,
+        "accuracy": 0.86875,
+        "latency_ms": 571.5479166666667,
+        "cost": 0.0005266333333333334,
+        "n_candidates": 72,
+        "candidates_to_best": 72,
+        "discovery_seconds": 4.801068550999844
+      },
+      "single_frontier": {
+        "accuracy_cost": {
+          "controller": "medium/w8/p2+stop",
+          "joint_satisfaction_rate": 0.0,
+          "accuracy": 0.8666666666666667,
+          "latency_ms": 1141.3214583333333,
+          "cost": 0.0010515966666666669
+        },
+        "accuracy_latency": {
+          "controller": "small/w8/p1",
+          "joint_satisfaction_rate": 1.0,
+          "accuracy": 0.8395833333333333,
+          "latency_ms": 438.8171875,
+          "cost": 0.00015520625
+        }
+      }
+    },
+    {
+      "profile": "target-7",
+      "variants": {
+        "from_scratch": {
+          "variant": "from_scratch",
+          "profile": "target-7",
+          "best_controller": "small/w8/p1+stop",
+          "joint_satisfaction_rate": 0.25,
+          "accuracy": 0.8041666666666667,
+          "latency_ms": 327.20500000000004,
+          "cost": 0.00011462000000000001,
+          "n_candidates": 30,
+          "candidates_to_best": 11,
+          "discovery_seconds": 1.1342243199997029,
+          "heldout_joint_satisfaction_rate": 0.5,
+          "heldout_accuracy": 0.83125,
+          "heldout_latency_ms": 311.13239583333336,
+          "heldout_cost": 0.00010877541666666667
+        },
+        "warm_start": {
+          "variant": "warm_start",
+          "profile": "target-7",
+          "best_controller": "small/w8/p1+stop",
+          "joint_satisfaction_rate": 0.25,
+          "accuracy": 0.8041666666666667,
+          "latency_ms": 327.20500000000004,
+          "cost": 0.00011462000000000001,
+          "n_candidates": 30,
+          "candidates_to_best": 9,
+          "discovery_seconds": 0.9015715909990831,
+          "heldout_joint_satisfaction_rate": 0.5,
+          "heldout_accuracy": 0.83125,
+          "heldout_latency_ms": 311.13239583333336,
+          "heldout_cost": 0.00010877541666666667
+        },
+        "guide_only": {
+          "variant": "guide_only",
+          "profile": "target-7",
+          "best_controller": "medium/w4/p1+stop",
+          "joint_satisfaction_rate": 0.5,
+          "accuracy": 0.7958333333333334,
+          "latency_ms": 363.92125,
+          "cost": 0.00033122000000000007,
+          "n_candidates": 30,
+          "candidates_to_best": 5,
+          "discovery_seconds": 0.9936908059989946,
+          "heldout_joint_satisfaction_rate": 0.0,
+          "heldout_accuracy": 0.7791666666666666,
+          "heldout_latency_ms": 343.9409375,
+          "heldout_cost": 0.000312415
+        },
+        "full": {
+          "variant": "full",
+          "profile": "target-7",
+          "best_controller": "small/w8/p1+stop",
+          "joint_satisfaction_rate": 0.25,
+          "accuracy": 0.8041666666666667,
+          "latency_ms": 327.20500000000004,
+          "cost": 0.00011462000000000001,
+          "n_candidates": 30,
+          "candidates_to_best": 9,
+          "discovery_seconds": 1.0199964140010707,
+          "heldout_joint_satisfaction_rate": 0.5,
+          "heldout_accuracy": 0.83125,
+          "heldout_latency_ms": 311.13239583333336,
+          "heldout_cost": 0.00010877541666666667
+        }
+      },
+      "fixed_default": {
+        "controller": "medium/w4/p1",
+        "seed_metrics": [
+          {
+            "accuracy": 0.75,
+            "latency_ms": 444.97583333333324,
+            "cost": 0.00040750666666666667
+          },
+          {
+            "accuracy": 0.7333333333333333,
+            "latency_ms": 448.27666666666664,
+            "cost": 0.00041061333333333326
+          },
+          {
+            "accuracy": 0.8333333333333334,
+            "latency_ms": 464.08666666666664,
+            "cost": 0.00042549333333333336
+          },
+          {
+            "accuracy": 0.8166666666666667,
+            "latency_ms": 452.8808333333333,
+            "cost": 0.00041494666666666677
+          },
+          {
+            "accuracy": 0.7333333333333333,
+            "latency_ms": 444.8766666666666,
+            "cost": 0.0004074133333333334
+          },
+          {
+            "accuracy": 0.8,
+            "latency_ms": 460.21916666666675,
+            "cost": 0.00042185333333333346
+          },
+          {
+            "accuracy": 0.75,
+            "latency_ms": 437.4675,
+            "cost": 0.00040044
+          },
+          {
+            "accuracy": 0.8,
+            "latency_ms": 445.67,
+            "cost": 0.0004081600000000001
+          }
+        ],
+        "accuracy": 0.7770833333333333,
+        "latency_ms": 449.8066666666666,
+        "cost": 0.0004120533333333334,
+        "joint_satisfaction_rate": 0.0
+      },
+      "oracle": {
+        "variant": "oracle",
+        "profile": "target-7",
+        "best_controller": "small/w8/p1",
+        "joint_satisfaction_rate": 0.5,
+        "accuracy": 0.8395833333333333,
+        "latency_ms": 438.8171875,
+        "cost": 0.00015520625,
+        "n_candidates": 72,
+        "candidates_to_best": 72,
+        "discovery_seconds": 4.999145527999644
+      },
+      "single_frontier": {
+        "accuracy_cost": {
+          "controller": "medium/w8/p2+stop",
+          "joint_satisfaction_rate": 0.0,
+          "accuracy": 0.8666666666666667,
+          "latency_ms": 1141.3214583333333,
+          "cost": 0.0010515966666666669
+        },
+        "accuracy_latency": {
+          "controller": "medium/w4/p1+stop",
+          "joint_satisfaction_rate": 0.0,
+          "accuracy": 0.7791666666666666,
+          "latency_ms": 343.9409375,
+          "cost": 0.000312415
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "early_stop_rate_tight_latency": 0.5714285714285714,
+  "early_stop_rate_other": 0.625,
+  "tier_share_high_accuracy": {
+    "small": 0.6666666666666666,
+    "medium": 0.3333333333333333,
+    "large": 0.0
+  },
+  "tier_share_other": {
+    "small": 0.9333333333333333,
+    "medium": 0.06666666666666667,
+    "large": 0.0
+  },
+  "median_width_tight_cost": 8.0,
+  "median_width_other": 8.0,
+  "rules": [
+    "Latency-tight profiles (<=350ms) used early stopping in 57% of winning controllers, vs 62% otherwise.",
+    "High-accuracy profiles (>=0.80) favoured tier small; other profiles favoured tier small.",
+    "Median winning width was 8 under a tight cost ceiling vs 8 otherwise."
+  ]
+}

@@ -1,0 +1,410 @@
+[
+  {
+    "profile": {
+      "name": "source-0",
+      "accuracy_floor": 0.65,
+      "latency_ceiling_ms": 600.0,
+      "cost_ceiling": 0.002
+    },
+    "best_controller": [
+      "small",
+      8,
+      1,
+      false
+    ],
+    "best_controller_label": "small/w8/p1",
+    "joint_satisfaction_rate": 1.0,
+    "n_candidates": 30
+  },
+  {
+    "profile": {
+      "name": "source-1",
+      "accuracy_floor": 0.7,
+      "latency_ceiling_ms": 350.0,
+      "cost_ceiling": 0.0008
+    },
+    "best_controller": [
+      "small",
+      8,
+      1,
+      true
+    ],
+    "best_controller_label": "small/w8/p1+stop",
+    "joint_satisfaction_rate": 1.0,
+    "n_candidates": 30
+  },
+  {
+    "profile": {
+      "name": "source-2",
+      "accuracy_floor": 0.7,
+      "latency_ceiling_ms": 500.0,
+      "cost_ceiling": 0.0015
+    },
+    "best_controller": [
+      "small",
+      8,
+      1,
+      false
+    ],
+    "best_controller_label": "small/w8/p1",
+    "joint_satisfaction_rate": 1.0,
+    "n_candidates": 30
+  },
+  {
+    "profile": {
+      "name": "source-3",
+      "accuracy_floor": 0.75,
+      "latency_ceiling_ms": 400.0,
+      "cost_ceiling": 0.001
+    },
+    "best_controller": [
+      "small",
+      8,
+      1,
+      true
+    ],
+    "best_controller_label": "small/w8/p1+stop",
+    "joint_satisfaction_rate": 0.75,
+    "n_candidates": 30
+  },
+  {
+    "profile": {
+      "name": "source-4",
+      "accuracy_floor": 0.75,
+      "latency_ceiling_ms": 700.0,
+      "cost_ceiling": 0.003
+    },
+    "best_controller": [
+      "small",
+      8,
+      2,
+      true
+    ],
+    "best_controller_label": "small/w8/p2+stop",
+    "joint_satisfaction_rate": 0.75,
+    "n_candidates": 30
+  },
+  {
+    "profile": {
+      "name": "source-5",
+      "accuracy_floor": 0.8,
+      "latency_ceiling_ms": 350.0,
+      "cost_ceiling": 0.0008
+    },
+    "best_controller": [
+      "small",
+      8,
+      1,
+      true
+    ],
+    "best_controller_label": "small/w8/p1+stop",
+    "joint_satisfaction_rate": 0.75,
+    "n_candidates": 30
+  },
+  {
+    "profile": {
+      "name": "source-6",
+      "accuracy_floor": 0.8,
+      "latency_ceiling_ms": 500.0,
+      "cost_ceiling": 0.002
+    },
+    "best_controller": [
+      "small",
+      8,
+      1,
+      false
+    ],
+    "best_controller_label": "small/w8/p1",
+    "joint_satisfaction_rate": 0.75,
+    "n_candidates": 30
+  },
+  {
+    "profile": {
+      "name": "source-7",
+      "accuracy_floor": 0.85,
+      "latency_ceiling_ms": 500.0,
+      "cost_ceiling": 0.0025
+    },
+    "best_controller": [
+      "medium",
+      4,
+      1,
+      true
+    ],
+    "best_controller_label": "medium/w4/p1+stop",
+    "joint_satisfaction_rate": 0.5,
+    "n_candidates": 30
+  },
+  {
+    "profile": {
+      "name": "source-8",
+      "accuracy_floor": 0.7,
+      "latency_ceiling_ms": 300.0,
+      "cost_ceiling": 0.0005
+    },
+    "best_controller": [
+      "small",
+      4,
+      1,
+      false
+    ],
+    "best_controller_label": "small/w4/p1",
+    "joint_satisfaction_rate": 0.75,
+    "n_candidates": 30
+  },
+  {
+    "profile": {
+      "name": "source-9",
+      "accuracy_floor": 0.75,
+      "latency_ceiling_ms": 300.0,
+      "cost_ceiling": 0.0008
+    },
+    "best_controller": [
+      "small",
+      4,
+      1,
+      false
+    ],
+    "best_controller_label": "small/w4/p1",
+    "joint_satisfaction_rate": 0.25,
+    "n_candidates": 30
+  },
+  {
+    "profile": {
+      "name": "source-10",
+      "accuracy_floor": 0.8,
+      "latency_ceiling_ms": 700.0,
+      "cost_ceiling": 0.0035
+    },
+    "best_controller": [
+      "small",
+      8,
+      2,
+      true
+    ],
+    "best_controller_label": "small/w8/p2+stop",
+    "joint_satisfaction_rate": 0.75,
+    "n_candidates": 30
+  },
+  {
+    "profile": {
+      "name": "source-11",
+      "accuracy_floor": 0.85,
+      "latency_ceiling_ms": 700.0,
+      "cost_ceiling": 0.004
+    },
+    "best_controller": [
+      "medium",
+      8,
+      1,
+      true
+    ],
+    "best_controller_label": "medium/w8/p1+stop",
+    "joint_satisfaction_rate": 0.75,
+    "n_candidates": 30
+  },
+  {
+    "profile": {
+      "name": "source-12",
+      "accuracy_floor": 0.65,
+      "latency_ceiling_ms": 400.0,
+      "cost_ceiling": 0.0004
+    },
+    "best_controller": [
+      "small",
+      8,
+      1,
+      true
+    ],
+    "best_controller_label": "small/w8/p1+stop",
+    "joint_satisfaction_rate": 1.0,
+    "n_candidates": 30
+  },
+  {
+    "profile": {
+      "name": "source-13",
+      "accuracy_floor": 0.7,
+      "latency_ceiling_ms": 700.0,
+      "cost_ceiling": 0.0025
+    },
+    "best_controller": [
+      "small",
+      8,
+      2,
+      true
+    ],
+    "best_controller_label": "small/w8/p2+stop",
+    "joint_satisfaction_rate": 1.0,
+    "n_candidates": 30
+  },
+  {
+    "profile": {
+      "name": "source-14",
+      "accuracy_floor": 0.75,
+      "latency_ceiling_ms": 350.0,
+      "cost_ceiling": 0.0015
+    },
+    "best_controller": [
+      "small",
+      8,
+      1,
+      true
+    ],
+    "best_controller_label": "small/w8/p1+stop",
+    "joint_satisfaction_rate": 0.75,
+    "n_candidates": 30
+  },
+  {
+    "profile": {
+      "name": "source-15",
+      "accuracy_floor": 0.8,
+      "latency_ceiling_ms": 350.0,
+      "cost_ceiling": 0.0012
+    },
+    "best_controller": [
+      "small",
+      8,
+      1,
+      true
+    ],
+    "best_controller_label": "small/w8/p1+stop",
+    "joint_satisfaction_rate": 0.75,
+    "n_candidates": 30
+  },
+  {
+    "profile": {
+      "name": "source-16",
+      "accuracy_floor": 0.85,
+      "latency_ceiling_ms": 400.0,
+      "cost_ceiling": 0.0015
+    },
+    "best_controller": [
+      "small",
+      8,
+      1,
+      true
+    ],
+    "best_controller_label": "small/w8/p1+stop",
+    "joint_satisfaction_rate": 0.25,
+    "n_candidates": 30
+  },
+  {
+    "profile": {
+      "name": "source-17",
+      "accuracy_floor": 0.65,
+      "latency_ceiling_ms": 800.0,
+      "cost_ceiling": 0.004
+    },
+    "best_controller": [
+      "small",
+      8,
+      2,
+      true
+    ],
+    "best_controller_label": "small/w8/p2+stop",
+    "joint_satisfaction_rate": 1.0,
+    "n_candidates": 30
+  },
+  {
+    "profile": {
+      "name": "source-18",
+      "accuracy_floor": 0.7,
+      "latency_ceiling_ms": 300.0,
+      "cost_ceiling": 0.0012
+    },
+    "best_controller": [
+      "small",
+      4,
+      1,
+      false
+    ],
+    "best_controller_label": "small/w4/p1",
+    "joint_satisfaction_rate": 0.75,
+    "n_candidates": 30
+  },
+  {
+    "profile": {
+      "name": "source-19",
+      "accuracy_floor": 0.75,
+      "latency_ceiling_ms": 600.0,
+      "cost_ceiling": 0.0008
+    },
+    "best_controller": [
+      "medium",
+      8,
+      1,
+      true
+    ],
+    "best_controller_label": "medium/w8/p1+stop",
+    "joint_satisfaction_rate": 0.75,
+    "n_candidates": 30
+  },
+  {
+    "profile": {
+      "name": "source-20",
+      "accuracy_floor": 0.8,
+      "latency_ceiling_ms": 450.0,
+      "cost_ceiling": 0.0008
+    },
+    "best_controller": [
+      "small",
+      8,
+      1,
+      false
+    ],
+    "best_controller_label": "small/w8/p1",
+    "joint_satisfaction_rate": 0.75,
+    "n_candidates": 30
+  },
+  {
+    "profile": {
+      "name": "source-21",
+      "accuracy_floor": 0.85,
+      "latency_ceiling_ms": 800.0,
+      "cost_ceiling": 0.004
+    },
+    "best_controller": [
+      "medium",
+      8,
+      1,
+      true
+    ],
+    "best_controller_label": "medium/w8/p1+stop",
+    "joint_satisfaction_rate": 0.75,
+    "n_candidates": 30
+  },
+  {
+    "profile": {
+      "name": "source-22",
+      "accuracy_floor": 0.7,
+      "latency_ceiling_ms": 450.0,
+      "cost_ceiling": 0.0006
+    },
+    "best_controller": [
+      "small",
+      8,
+      1,
+      false
+    ],
+    "best_controller_label": "small/w8/p1",
+    "joint_satisfaction_rate": 1.0,
+    "n_candidates": 30
+  },
+  {
+    "profile": {
+      "name": "source-23",
+      "accuracy_floor": 0.75,
+      "latency_ceiling_ms": 450.0,
+      "cost_ceiling": 0.002
+    },
+    "best_controller": [
+      "small",
+      8,
+      1,
+      false
+    ],
+    "best_controller_label": "small/w8/p1",
+    "joint_satisfaction_rate": 1.0,
+    "n_candidates": 30
+  }
+]
